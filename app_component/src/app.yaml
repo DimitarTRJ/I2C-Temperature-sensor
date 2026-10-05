@@ -1,0 +1,4 @@
+domain_path: C:\Users\Lenovo\Desktop\Letnik3\DN\Project\platform\export\platform\sw\standalone_microblaze_I
+app_src_dir: D:\2025.1\Vitis\data\embeddedsw\lib\sw_apps\empty_application
+template: empty_application
+lang: c

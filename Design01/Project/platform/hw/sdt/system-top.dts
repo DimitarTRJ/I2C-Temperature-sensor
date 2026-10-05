@@ -1,0 +1,27 @@
+/dts-v1/;
+#include "pl.dtsi"
+/ {
+	device_id = "7a50t";
+	#address-cells = <1>;
+	#size-cells = <1>;
+	family = "microblaze";
+	speed_grade = "1";
+	dlmb_cntlr_memory: memory@0 {
+		compatible = "xlnx,lmb-bram-if-cntlr-4.0";
+		xlnx,ip-name = "lmb_bram_if_cntlr";
+		device_type = "memory";
+		memory_type = "memory";
+		reg = <0x00000000 0x20000>;
+	};
+	chosen {
+	};
+	aliases {
+	};
+	cpus_microblaze_0: cpus_microblaze@0 {
+		address-map = <0x00000000 &dlmb_cntlr_memory 0x00000000 0x20000>, 
+			      <0x00000000 &dlmb_cntlr 0x00000000 0x20000>, 
+			      <0x80000000 &iomodule_0 0x80000000 0x10000>;
+		#ranges-address-cells = <0x1>;
+		#ranges-size-cells = <0x1>;
+	};
+};

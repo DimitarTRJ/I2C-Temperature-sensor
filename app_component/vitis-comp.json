@@ -1,0 +1,16 @@
+{
+  "name": "app_component",
+  "type": "HOST",
+  "platform": "platform",
+  "domain": "standalone_microblaze_I",
+  "cpuInstance": "microblaze_I",
+  "cpuType": "microblaze",
+  "os": "standalone",
+  "configuration": {
+    "componentType": "HOST",
+    "hostToolchainConfigurations": []
+  },
+  "domainRealName": "standalone_microblaze_I",
+  "useSysrootToolchain": false,
+  "applicationFlow": "EMBEDDED"
+}

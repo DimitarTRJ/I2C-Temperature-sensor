@@ -1,0 +1,9 @@
+verilog xil_defaultlib -i "D:/2025.1/Vivado/data/rsb/busdef" \
+"../../../../Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_6/sim/bd_fc5c_0_lmb_bram_I_0.v" \
+"../../../../Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/sim/bd_fc5c_0.v" \
+"../../../../Project01.gen/sources_1/ip/microblaze_mcs_0_2/sim/microblaze_mcs_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

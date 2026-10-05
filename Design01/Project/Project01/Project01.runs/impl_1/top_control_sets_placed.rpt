@@ -1,0 +1,108 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Thu Jan 29 22:25:10 2026
+| Host         : DESKTOP-UL4A9AD running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a50t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    30 |
+|    Minimum number of control sets                        |    30 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    67 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    30 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    15 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              65 |           25 |
+| No           | No                    | Yes                    |              28 |           12 |
+| No           | Yes                   | No                     |              99 |           45 |
+| Yes          | No                    | No                     |              32 |           26 |
+| Yes          | No                    | Yes                    |               4 |            1 |
+| Yes          | Yes                   | No                     |             297 |          103 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+--------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|      Clock Signal     |                                                          Enable Signal                                                         |                                                            Set/Reset Signal                                                            | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------+--------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  clock_IBUF_BUFG      |                                                                                                                                | your_instance_name/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.New_Carry_MUXCY/Use_Async_Reset.sync_reset_reg |                1 |              1 |         1.00 |
+|  clock_IBUF_BUFG      |                                                                                                                                | your_instance_name/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/MSR_Rst                                                   |                1 |              1 |         1.00 |
+|  clock_IBUF_BUFG      | your_instance_name/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/MTSMSR_Write                                      | your_instance_name/inst/microblaze_I/U0/MicroBlaze_Core_I/sync_reset                                                                   |                1 |              1 |         1.00 |
+|  u_apb_i2c/u_i2c/S[0] |                                                                                                                                |                                                                                                                                        |                1 |              2 |         2.00 |
+|  clock_IBUF_BUFG      |                                                                                                                                | your_instance_name/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.MUXCY_JUMP_CARRY3/S_0                          |                2 |              4 |         2.00 |
+|  clock_IBUF_BUFG      |                                                                                                                                | your_instance_name/inst/rst_0/U0/bus_struct_reset[0]                                                                                   |                2 |              4 |         2.00 |
+|  clock_IBUF_BUFG      | u_apb_uart/transmitter_system_inst/uart_fsm_inst/n_counter_next                                                                | u_apb_uart/transmitter_system_inst/uart_fsm_inst/SR[0]                                                                                 |                1 |              4 |         4.00 |
+|  u_apb_i2c/u_i2c/S[0] | u_apb_i2c/u_i2c/FSM_sequential_state[3]_i_1_n_0                                                                                | u_apb_uart/transmitter_system_inst/uart_fsm_inst/SR[0]                                                                                 |                1 |              4 |         4.00 |
+|  clock_IBUF_BUFG      |                                                                                                                                | your_instance_name/inst/rst_0/U0/EXT_LPF/lpf_int                                                                                       |                3 |              5 |         1.67 |
+|  clock_IBUF_BUFG      |                                                                                                                                | your_instance_name/inst/rst_0/U0/peripheral_reset[0]                                                                                   |                4 |              5 |         1.25 |
+|  clock_IBUF_BUFG      | your_instance_name/inst/rst_0/U0/SEQ/seq_cnt_en                                                                                | your_instance_name/inst/rst_0/U0/SEQ/SEQ_COUNTER/clear                                                                                 |                1 |              6 |         6.00 |
+|  clock_IBUF_BUFG      | your_instance_name/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/Using_FPGA.Native_0 | your_instance_name/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.MUXCY_JUMP_CARRY3/S66_out                      |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG      | u_apb_uart/transmitter_system_inst/uart_fsm_inst/b_reg_next_0                                                                  | u_apb_uart/transmitter_system_inst/uart_fsm_inst/SR[0]                                                                                 |                2 |              8 |         4.00 |
+|  u_apb_i2c/u_i2c/S[0] |                                                                                                                                | u_apb_uart/transmitter_system_inst/uart_fsm_inst/SR[0]                                                                                 |                7 |             14 |         2.00 |
+|  clock_IBUF_BUFG      | your_instance_name/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.MUXCY_JUMP_CARRY3/PC_Write             | your_instance_name/inst/microblaze_I/U0/MicroBlaze_Core_I/sync_reset                                                                   |                5 |             15 |         3.00 |
+|  clock_IBUF_BUFG      |                                                                                                                                | u_apb_uart/transmitter_system_inst/uart_fsm_inst/tx_start_reg_reg                                                                      |                4 |             16 |         4.00 |
+|  clock_IBUF_BUFG      |                                                                                                                                | your_instance_name/inst/microblaze_I/U0/MicroBlaze_Core_I/sync_reset                                                                   |                7 |             16 |         2.29 |
+|  clock_IBUF_BUFG      | your_instance_name/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/PreFetch_Buffer_I/of_valid_FDR_I/E[0]             | your_instance_name/inst/microblaze_I/U0/MicroBlaze_Core_I/sync_reset                                                                   |               10 |             16 |         1.60 |
+|  clock_IBUF_BUFG      | apb_bridge_inst/u_apb_master/E[0]                                                                                              | u_apb_uart/transmitter_system_inst/uart_fsm_inst/SR[0]                                                                                 |                5 |             16 |         3.20 |
+|  clock_IBUF_BUFG      | apb_bridge_inst/u_apb_master/flag_reg_0[0]                                                                                     | u_apb_uart/transmitter_system_inst/uart_fsm_inst/SR[0]                                                                                 |                6 |             16 |         2.67 |
+|  clock_IBUF_BUFG      | apb_bridge_inst/u_apb_master/delay_write_reg_1[0]                                                                              | u_apb_uart/transmitter_system_inst/uart_fsm_inst/SR[0]                                                                                 |                6 |             16 |         2.67 |
+|  clock_IBUF_BUFG      |                                                                                                                                | u_apb_uart/transmitter_system_inst/uart_fsm_inst/SR[0]                                                                                 |               13 |             29 |         2.23 |
+|  clock_IBUF_BUFG      |                                                                                                                                | your_instance_name/inst/iomodule_0/U0/Using_IO_Bus.io_bus_read_data[31]_i_1_n_0                                                        |               13 |             32 |         2.46 |
+|  clock_IBUF_BUFG      | your_instance_name/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/Using_FPGA.Native_0 |                                                                                                                                        |               26 |             32 |         1.23 |
+|  clock_IBUF_BUFG      | your_instance_name/inst/iomodule_0/U0/IO_Addr_Strobe00_in                                                                      | your_instance_name/inst/rst_0/U0/peripheral_reset[0]                                                                                   |               18 |             37 |         2.06 |
+|  clock_IBUF_BUFG      | your_instance_name/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.clean_iReady_MuxCY/IReady              |                                                                                                                                        |               13 |             47 |         3.62 |
+|  clock_IBUF_BUFG      | u_apb_timer/config_reg_reg_n_0_[0]                                                                                             | u_apb_timer/count_reg[0]_i_1_n_0                                                                                                       |               16 |             64 |         4.00 |
+|  clock_IBUF_BUFG      |                                                                                                                                |                                                                                                                                        |               25 |             66 |         2.64 |
+|  clock_IBUF_BUFG      | your_instance_name/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/Using_FPGA.Native_0 | your_instance_name/inst/microblaze_I/U0/MicroBlaze_Core_I/sync_reset                                                                   |               30 |             90 |         3.00 |
+|  clock_IBUF_BUFG      | your_instance_name/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Reg_Write                                         |                                                                                                                                        |               32 |            128 |         4.00 |
++-----------------------+--------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

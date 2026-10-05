@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Wed Jan 28 15:05:42 2026
+# Process ID         : 23696
+# Current directory  : C:/Users/Lenovo/Desktop/Letnik3/DN/DN4SV/Project
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent29580 C:\Users\Lenovo\Desktop\Letnik3\DN\DN4SV\Project\Project.xpr
+# Log file           : C:/Users/Lenovo/Desktop/Letnik3/DN/DN4SV/Project/vivado.log
+# Journal file       : C:/Users/Lenovo/Desktop/Letnik3/DN/DN4SV/Project\vivado.jou
+# Running On         : DESKTOP-UL4A9AD
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 5600H with Radeon Graphics         
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 14877 MB
+# Swap memory        : 13587 MB
+# Total Virtual      : 28464 MB
+# Available Virtual  : 4283 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Lenovo/Desktop/Letnik3/DN/DN4SV/Project/Project.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,5 @@
+create libxil.a
+addlib C:/Users/Lenovo/Desktop/Letnik3/DN/Project/platform/microblaze_I/standalone_microblaze_I/bsp/libsrc/build_configs/gen_bsp/libsrc/iomodule/src/libiomodule.a
+addlib C:/Users/Lenovo/Desktop/Letnik3/DN/Project/platform/microblaze_I/standalone_microblaze_I/bsp/libsrc/build_configs/gen_bsp/libsrc/bram/src/libbram.a
+save
+end

@@ -1,0 +1,1363 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Jan 23 21:00:19 2026
+# Process ID         : 27300
+# Current directory  : C:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.runs/microblaze_mcs_0_synth_1
+# Command line       : vivado.exe -log microblaze_mcs_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source microblaze_mcs_0.tcl
+# Log file           : C:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.runs/microblaze_mcs_0_synth_1/microblaze_mcs_0.vds
+# Journal file       : C:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.runs/microblaze_mcs_0_synth_1\vivado.jou
+# Running On         : DESKTOP-UL4A9AD
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 5600H with Radeon Graphics         
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 14877 MB
+# Swap memory        : 9126 MB
+# Total Virtual      : 24004 MB
+# Available Virtual  : 7055 MB
+#-----------------------------------------------------------
+source microblaze_mcs_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 491.785 ; gain = 211.207
+Command: synth_design -top microblaze_mcs_0 -part xc7a50tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t'
+INFO: [Device 21-403] Loading part xc7a50tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19784
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1198.867 ; gain = 492.852
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'microblaze_mcs_0' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/synth/microblaze_mcs_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_fc5c_0' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/synth/bd_fc5c_0.v:10]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_dlmb_0' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_3/synth/bd_fc5c_0_dlmb_0.vhd:89]
+	Parameter C_LMB_NUM_SLAVES bound to: 2 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_v10' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_2/hdl/lmb_v10_v3_0_vh_rfs.vhd:91' bound to instance 'U0' of component 'lmb_v10' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_3/synth/bd_fc5c_0_dlmb_0.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'lmb_v10' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_2/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-3491] module 'FDS' declared at 'D:/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44354' bound to instance 'POR_FF_I' of component 'FDS' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_2/hdl/lmb_v10_v3_0_vh_rfs.vhd:170]
+INFO: [Synth 8-6157] synthesizing module 'FDS' [D:/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44354]
+INFO: [Synth 8-6155] done synthesizing module 'FDS' (0#1) [D:/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44354]
+INFO: [Synth 8-256] done synthesizing module 'lmb_v10' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_2/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_dlmb_0' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_3/synth/bd_fc5c_0_dlmb_0.vhd:89]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'bd_fc5c_0_dlmb_0' is unconnected for instance 'dlmb' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/synth/bd_fc5c_0.v:107]
+WARNING: [Synth 8-7023] instance 'dlmb' of module 'bd_fc5c_0_dlmb_0' has 25 connections declared, but only 24 given [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/synth/bd_fc5c_0.v:107]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_dlmb_cntlr_0' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/synth/bd_fc5c_0_dlmb_cntlr_0.vhd:84]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000011111111111111111 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000011000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK4 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK5 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK6 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK7 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_ARBITRATION bound to: 0 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_CE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_UE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_STATUS_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_REGISTER bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 1 - type: integer 
+	Parameter C_CE_COUNTER_WIDTH bound to: 0 - type: integer 
+	Parameter C_WRITE_ACCESS bound to: 2 - type: integer 
+	Parameter C_BRAM_AWIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_bram_if_cntlr' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5040' bound to instance 'U0' of component 'lmb_bram_if_cntlr' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/synth/bd_fc5c_0_dlmb_cntlr_0.vhd:280]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5222]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000011000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK4 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK5 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK6 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK7 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_ECC_WIDTH bound to: 7 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_ARBITRATION bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_mux' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4146' bound to instance 'lmb_mux_I' of component 'lmb_mux' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5548]
+INFO: [Synth 8-638] synthesizing module 'lmb_mux' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4291]
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000011000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'pselect_mask' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3470' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4404]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr_v4_0_26_pselect_mask' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3485]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr_v4_0_26_pselect_mask' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3485]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4291]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5222]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_dlmb_cntlr_0' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/synth/bd_fc5c_0_dlmb_cntlr_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_ilmb_0' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_2/synth/bd_fc5c_0_ilmb_0.vhd:89]
+	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_v10' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_2/hdl/lmb_v10_v3_0_vh_rfs.vhd:91' bound to instance 'U0' of component 'lmb_v10' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_2/synth/bd_fc5c_0_ilmb_0.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'lmb_v10__parameterized1' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_2/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-3491] module 'FDS' declared at 'D:/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44354' bound to instance 'POR_FF_I' of component 'FDS' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_2/hdl/lmb_v10_v3_0_vh_rfs.vhd:170]
+INFO: [Synth 8-256] done synthesizing module 'lmb_v10__parameterized1' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_2/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_ilmb_0' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_2/synth/bd_fc5c_0_ilmb_0.vhd:89]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'bd_fc5c_0_ilmb_0' is unconnected for instance 'ilmb' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/synth/bd_fc5c_0.v:155]
+WARNING: [Synth 8-7023] instance 'ilmb' of module 'bd_fc5c_0_ilmb_0' has 25 connections declared, but only 24 given [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/synth/bd_fc5c_0.v:155]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_ilmb_cntlr_0' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_5/synth/bd_fc5c_0_ilmb_cntlr_0.vhd:84]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000011111111111111111 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000010000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK4 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK5 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK6 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK7 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_ARBITRATION bound to: 0 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_CE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_UE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_STATUS_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_REGISTER bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 1 - type: integer 
+	Parameter C_CE_COUNTER_WIDTH bound to: 0 - type: integer 
+	Parameter C_WRITE_ACCESS bound to: 2 - type: integer 
+	Parameter C_BRAM_AWIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_bram_if_cntlr' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5040' bound to instance 'U0' of component 'lmb_bram_if_cntlr' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_5/synth/bd_fc5c_0_ilmb_cntlr_0.vhd:280]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr__parameterized1' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5222]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000010000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK4 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK5 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK6 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK7 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_ECC_WIDTH bound to: 7 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_ARBITRATION bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_mux' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4146' bound to instance 'lmb_mux_I' of component 'lmb_mux' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5548]
+INFO: [Synth 8-638] synthesizing module 'lmb_mux__parameterized1' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4291]
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000010000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'pselect_mask' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3470' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4404]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr_v4_0_26_pselect_mask__parameterized0' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3485]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr_v4_0_26_pselect_mask__parameterized0' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3485]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux__parameterized1' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4291]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr__parameterized1' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_4/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5222]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_ilmb_cntlr_0' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_5/synth/bd_fc5c_0_ilmb_cntlr_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_iomodule_0_0' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/synth/bd_fc5c_0_iomodule_0_0.vhd:85]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_FREQ bound to: 100000000 - type: integer 
+	Parameter C_INSTANCE bound to: iomodule - type: string 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_AVOID_PRIMITIVES bound to: 0 - type: integer 
+	Parameter C_TMR bound to: 0 - type: integer 
+	Parameter C_USE_TMR_DISABLE bound to: 0 - type: integer 
+	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000010000000000000001111111111111111 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000010000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000011000000000000000000000000000000 
+	Parameter C_IO_HIGHADDR bound to: 64'b0000000000000000000000000000000011111111111111111111111111111111 
+	Parameter C_IO_BASEADDR bound to: 64'b0000000000000000000000000000000011000000000000000000000000000000 
+	Parameter C_IO_MASK bound to: 64'b0000000000000000000000000000000011000000000000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_USE_IO_BUS bound to: 1 - type: integer 
+	Parameter C_USE_UART_RX bound to: 0 - type: integer 
+	Parameter C_USE_UART_TX bound to: 0 - type: integer 
+	Parameter C_UART_BAUDRATE bound to: 9600 - type: integer 
+	Parameter C_UART_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_UART_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_UART_ODD_PARITY bound to: 0 - type: integer 
+	Parameter C_UART_RX_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_UART_TX_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_UART_ERROR_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_UART_PROG_BAUDRATE bound to: 0 - type: integer 
+	Parameter C_UART_FREQ bound to: 100000000 - type: integer 
+	Parameter C_UART_ASYNC bound to: 0 - type: integer 
+	Parameter C_UART_NUM_SYNC_FF bound to: 2 - type: integer 
+	Parameter C_USE_FIT1 bound to: 0 - type: integer 
+	Parameter C_FIT1_No_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_FIT1_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_FIT2 bound to: 0 - type: integer 
+	Parameter C_FIT2_No_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_FIT2_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_FIT3 bound to: 0 - type: integer 
+	Parameter C_FIT3_No_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_FIT3_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_FIT4 bound to: 0 - type: integer 
+	Parameter C_FIT4_No_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_FIT4_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_PIT1 bound to: 0 - type: integer 
+	Parameter C_PIT1_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT1_READABLE bound to: 1 - type: integer 
+	Parameter C_PIT1_PRESCALER bound to: 0 - type: integer 
+	Parameter C_PIT1_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_PIT2 bound to: 0 - type: integer 
+	Parameter C_PIT2_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT2_READABLE bound to: 1 - type: integer 
+	Parameter C_PIT2_PRESCALER bound to: 0 - type: integer 
+	Parameter C_PIT2_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_PIT3 bound to: 0 - type: integer 
+	Parameter C_PIT3_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT3_READABLE bound to: 1 - type: integer 
+	Parameter C_PIT3_PRESCALER bound to: 0 - type: integer 
+	Parameter C_PIT3_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_PIT4 bound to: 0 - type: integer 
+	Parameter C_PIT4_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT4_READABLE bound to: 1 - type: integer 
+	Parameter C_PIT4_PRESCALER bound to: 0 - type: integer 
+	Parameter C_PIT4_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_GPO1 bound to: 0 - type: integer 
+	Parameter C_GPO1_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO1_INIT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_USE_GPO2 bound to: 0 - type: integer 
+	Parameter C_GPO2_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO2_INIT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_USE_GPO3 bound to: 0 - type: integer 
+	Parameter C_GPO3_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO3_INIT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_USE_GPO4 bound to: 0 - type: integer 
+	Parameter C_GPO4_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO4_INIT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_USE_GPI1 bound to: 0 - type: integer 
+	Parameter C_GPI1_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI1_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_GPI2 bound to: 0 - type: integer 
+	Parameter C_GPI2_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI2_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_GPI3 bound to: 0 - type: integer 
+	Parameter C_GPI3_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI3_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_GPI4 bound to: 0 - type: integer 
+	Parameter C_GPI4_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI4_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_INTC_USE_EXT_INTR bound to: 0 - type: integer 
+	Parameter C_INTC_INTR_SIZE bound to: 1 - type: integer 
+	Parameter C_INTC_LEVEL_EDGE bound to: 16'b0000000000000000 
+	Parameter C_INTC_POSITIVE bound to: 16'b1111111111111111 
+	Parameter C_INTC_HAS_FAST bound to: 1 - type: integer 
+	Parameter C_INTC_ADDR_WIDTH bound to: 17 - type: integer 
+	Parameter C_INTC_BASE_VECTORS bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_INTC_ASYNC_INTR bound to: 16'b1111111111111111 
+	Parameter C_INTC_NUM_SYNC_FF bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'iomodule' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9881' bound to instance 'U0' of component 'iomodule' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/synth/bd_fc5c_0_iomodule_0_0.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'iomodule' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:10092]
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 64'b0000000000000000000000000000000010000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000011000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'pselect_mask' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9714' bound to instance 'pselect_mask_reg' of component 'pselect_mask' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:10444]
+INFO: [Synth 8-638] synthesizing module 'iomodule_v3_1_12_pselect_mask' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9729]
+INFO: [Synth 8-256] done synthesizing module 'iomodule_v3_1_12_pselect_mask' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9729]
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 64'b0000000000000000000000000000000011000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000011000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'pselect_mask' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9714' bound to instance 'pselect_mask_io' of component 'pselect_mask' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:10489]
+INFO: [Synth 8-638] synthesizing module 'iomodule_v3_1_12_pselect_mask__parameterized0' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9729]
+INFO: [Synth 8-256] done synthesizing module 'iomodule_v3_1_12_pselect_mask__parameterized0' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9729]
+	Parameter C_TARGET bound to: 1'b0 
+	Parameter C_FREQ bound to: 100000000 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_AVOID_PRIMITIVES bound to: 0 - type: integer 
+	Parameter C_TMR bound to: 0 - type: integer 
+	Parameter C_USE_TMR_DISABLE bound to: 0 - type: integer 
+	Parameter C_USE_UART_RX bound to: 0 - type: integer 
+	Parameter C_USE_UART_TX bound to: 0 - type: integer 
+	Parameter C_UART_BAUDRATE bound to: 9600 - type: integer 
+	Parameter C_UART_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_UART_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_UART_ODD_PARITY bound to: 0 - type: integer 
+	Parameter C_UART_RX_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_UART_TX_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_UART_ERROR_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_UART_PROG_BAUDRATE bound to: 0 - type: integer 
+	Parameter C_UART_FREQ bound to: 100000000 - type: integer 
+	Parameter C_UART_ASYNC bound to: 0 - type: integer 
+	Parameter C_UART_NUM_SYNC_FF bound to: 2 - type: integer 
+	Parameter C_USE_FIT1 bound to: 0 - type: integer 
+	Parameter C_FIT1_No_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_FIT1_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_FIT2 bound to: 0 - type: integer 
+	Parameter C_FIT2_No_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_FIT2_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_FIT3 bound to: 0 - type: integer 
+	Parameter C_FIT3_No_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_FIT3_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_FIT4 bound to: 0 - type: integer 
+	Parameter C_FIT4_No_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_FIT4_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_PIT1 bound to: 0 - type: integer 
+	Parameter C_PIT1_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT1_READABLE bound to: 1 - type: integer 
+	Parameter C_PIT1_PRESCALER bound to: 0 - type: integer 
+	Parameter C_PIT1_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_PIT2 bound to: 0 - type: integer 
+	Parameter C_PIT2_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT2_READABLE bound to: 1 - type: integer 
+	Parameter C_PIT2_PRESCALER bound to: 0 - type: integer 
+	Parameter C_PIT2_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_PIT3 bound to: 0 - type: integer 
+	Parameter C_PIT3_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT3_READABLE bound to: 1 - type: integer 
+	Parameter C_PIT3_PRESCALER bound to: 0 - type: integer 
+	Parameter C_PIT3_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_PIT4 bound to: 0 - type: integer 
+	Parameter C_PIT4_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT4_READABLE bound to: 1 - type: integer 
+	Parameter C_PIT4_PRESCALER bound to: 0 - type: integer 
+	Parameter C_PIT4_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_GPO1 bound to: 0 - type: integer 
+	Parameter C_GPO1_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO1_INIT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_USE_GPO2 bound to: 0 - type: integer 
+	Parameter C_GPO2_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO2_INIT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_USE_GPO3 bound to: 0 - type: integer 
+	Parameter C_GPO3_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO3_INIT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_USE_GPO4 bound to: 0 - type: integer 
+	Parameter C_GPO4_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO4_INIT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_USE_GPI1 bound to: 0 - type: integer 
+	Parameter C_GPI1_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI1_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_GPI2 bound to: 0 - type: integer 
+	Parameter C_GPI2_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI2_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_GPI3 bound to: 0 - type: integer 
+	Parameter C_GPI3_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI3_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_GPI4 bound to: 0 - type: integer 
+	Parameter C_GPI4_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI4_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_INTC_USE_EXT_INTR bound to: 0 - type: integer 
+	Parameter C_INTC_INTR_SIZE bound to: 1 - type: integer 
+	Parameter C_INTC_LEVEL_EDGE bound to: 16'b0000000000000000 
+	Parameter C_INTC_POSITIVE bound to: 16'b1111111111111111 
+	Parameter C_INTC_HAS_FAST bound to: 1 - type: integer 
+	Parameter C_INTC_ADDR_WIDTH bound to: 17 - type: integer 
+	Parameter C_INTC_BASE_VECTORS bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_INTC_ASYNC_INTR bound to: 16'b1111111111111111 
+	Parameter C_INTC_NUM_SYNC_FF bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'Iomodule_core' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:8502' bound to instance 'IOModule_Core_I1' of component 'iomodule_core' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:10680]
+INFO: [Synth 8-638] synthesizing module 'Iomodule_core' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:8716]
+	Parameter C_TARGET bound to: 1'b0 
+	Parameter C_FREQ bound to: 100000000 - type: integer 
+	Parameter C_UART_FREQ bound to: 100000000 - type: integer 
+	Parameter C_TMR bound to: 0 - type: integer 
+	Parameter C_USE_TMR_DISABLE bound to: 0 - type: integer 
+	Parameter C_VOTE_SIZE bound to: 199 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_UART_PROG_BAUDRATE bound to: 0 - type: integer 
+	Parameter C_UART_ASYNC bound to: 0 - type: integer 
+	Parameter C_UART_NUM_SYNC_FF bound to: 2 - type: integer 
+	Parameter C_UART_BAUDRATE bound to: 9600 - type: integer 
+	Parameter C_USE_UART_RX bound to: 0 - type: integer 
+	Parameter C_USE_UART_TX bound to: 0 - type: integer 
+	Parameter C_UART_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_UART_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_UART_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'UART' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:7680' bound to instance 'UART_I1' of component 'UART' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9042]
+INFO: [Synth 8-638] synthesizing module 'UART' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:7731]
+	Parameter C_TARGET bound to: 1'b0 
+	Parameter C_FREQ bound to: 100000000 - type: integer 
+	Parameter C_TMR bound to: 0 - type: integer 
+	Parameter C_USE_TMR_DISABLE bound to: 0 - type: integer 
+	Parameter C_VOTE_SIZE bound to: 136 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_UART_PROG_BAUDRATE bound to: 0 - type: integer 
+	Parameter C_UART_BAUDRATE bound to: 9600 - type: integer 
+	Parameter C_USE_UART_RX bound to: 0 - type: integer 
+	Parameter C_USE_UART_TX bound to: 0 - type: integer 
+	Parameter C_UART_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_UART_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_UART_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'UART_Core' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:7134' bound to instance 'UART_Core_I' of component 'UART_Core' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:7850]
+INFO: [Synth 8-638] synthesizing module 'UART_Core' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:7178]
+INFO: [Synth 8-256] done synthesizing module 'UART_Core' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:7178]
+INFO: [Synth 8-256] done synthesizing module 'UART' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:7731]
+	Parameter C_TARGET bound to: 1'b0 
+	Parameter C_TMR bound to: 0 - type: integer 
+	Parameter C_USE_TMR_DISABLE bound to: 0 - type: integer 
+	Parameter C_VOTE_SIZE bound to: 34 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_USE_FIT bound to: 0 - type: integer 
+	Parameter C_NO_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_INACCURACY bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'FIT_Module' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:2493' bound to instance 'FIT_I1' of component 'FIT_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9095]
+INFO: [Synth 8-638] synthesizing module 'FIT_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:2521]
+INFO: [Synth 8-256] done synthesizing module 'FIT_Module' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:2521]
+	Parameter C_TARGET bound to: 1'b0 
+	Parameter C_TMR bound to: 0 - type: integer 
+	Parameter C_USE_TMR_DISABLE bound to: 0 - type: integer 
+	Parameter C_VOTE_SIZE bound to: 34 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_USE_FIT bound to: 0 - type: integer 
+	Parameter C_NO_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_INACCURACY bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'FIT_Module' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:2493' bound to instance 'FIT_I2' of component 'FIT_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9118]
+	Parameter C_TARGET bound to: 1'b0 
+	Parameter C_TMR bound to: 0 - type: integer 
+	Parameter C_USE_TMR_DISABLE bound to: 0 - type: integer 
+	Parameter C_VOTE_SIZE bound to: 34 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_USE_FIT bound to: 0 - type: integer 
+	Parameter C_NO_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_INACCURACY bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'FIT_Module' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:2493' bound to instance 'FIT_I3' of component 'FIT_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9141]
+	Parameter C_TARGET bound to: 1'b0 
+	Parameter C_TMR bound to: 0 - type: integer 
+	Parameter C_USE_TMR_DISABLE bound to: 0 - type: integer 
+	Parameter C_VOTE_SIZE bound to: 34 - type: integer 
+	Parameter C_USE_SRL16 bound to: yes - type: string 
+	Parameter C_USE_FIT bound to: 0 - type: integer 
+	Parameter C_NO_CLOCKS bound to: 6216 - type: integer 
+	Parameter C_INACCURACY bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'FIT_Module' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:2493' bound to instance 'FIT_I4' of component 'FIT_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9164]
+	Parameter C_TARGET bound to: 1'b0 
+	Parameter C_TMR bound to: 0 - type: integer 
+	Parameter C_USE_TMR_DISABLE bound to: 0 - type: integer 
+	Parameter C_VOTE_SIZE bound to: 70 - type: integer 
+	Parameter C_USE_PIT bound to: 0 - type: integer 
+	Parameter C_PIT_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT_READABLE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'PIT_Module' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4273' bound to instance 'PIT_I1' of component 'PIT_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9202]
+INFO: [Synth 8-638] synthesizing module 'PIT_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4304]
+INFO: [Synth 8-256] done synthesizing module 'PIT_Module' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4304]
+	Parameter C_TARGET bound to: 1'b0 
+	Parameter C_TMR bound to: 0 - type: integer 
+	Parameter C_USE_TMR_DISABLE bound to: 0 - type: integer 
+	Parameter C_VOTE_SIZE bound to: 70 - type: integer 
+	Parameter C_USE_PIT bound to: 0 - type: integer 
+	Parameter C_PIT_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT_READABLE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'PIT_Module' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4273' bound to instance 'PIT_I2' of component 'PIT_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9241]
+	Parameter C_TARGET bound to: 1'b0 
+	Parameter C_TMR bound to: 0 - type: integer 
+	Parameter C_USE_TMR_DISABLE bound to: 0 - type: integer 
+	Parameter C_VOTE_SIZE bound to: 70 - type: integer 
+	Parameter C_USE_PIT bound to: 0 - type: integer 
+	Parameter C_PIT_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT_READABLE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'PIT_Module' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4273' bound to instance 'PIT_I3' of component 'PIT_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9280]
+	Parameter C_TARGET bound to: 1'b0 
+	Parameter C_TMR bound to: 0 - type: integer 
+	Parameter C_USE_TMR_DISABLE bound to: 0 - type: integer 
+	Parameter C_VOTE_SIZE bound to: 70 - type: integer 
+	Parameter C_USE_PIT bound to: 0 - type: integer 
+	Parameter C_PIT_SIZE bound to: 32 - type: integer 
+	Parameter C_PIT_READABLE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'PIT_Module' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4273' bound to instance 'PIT_I4' of component 'PIT_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9319]
+	Parameter C_TMR bound to: 0 - type: integer 
+	Parameter C_USE_TMR_DISABLE bound to: 0 - type: integer 
+	Parameter C_VOTE_SIZE bound to: 32 - type: integer 
+	Parameter C_USE_GPO bound to: 0 - type: integer 
+	Parameter C_GPO_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO_INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'GPO_Module' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:3186' bound to instance 'GPO_I1' of component 'GPO_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9347]
+INFO: [Synth 8-638] synthesizing module 'GPO_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:3210]
+INFO: [Synth 8-256] done synthesizing module 'GPO_Module' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:3210]
+	Parameter C_TMR bound to: 0 - type: integer 
+	Parameter C_USE_TMR_DISABLE bound to: 0 - type: integer 
+	Parameter C_VOTE_SIZE bound to: 32 - type: integer 
+	Parameter C_USE_GPO bound to: 0 - type: integer 
+	Parameter C_GPO_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO_INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'GPO_Module' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:3186' bound to instance 'GPO_I2' of component 'GPO_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9366]
+	Parameter C_TMR bound to: 0 - type: integer 
+	Parameter C_USE_TMR_DISABLE bound to: 0 - type: integer 
+	Parameter C_VOTE_SIZE bound to: 32 - type: integer 
+	Parameter C_USE_GPO bound to: 0 - type: integer 
+	Parameter C_GPO_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO_INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'GPO_Module' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:3186' bound to instance 'GPO_I3' of component 'GPO_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9385]
+	Parameter C_TMR bound to: 0 - type: integer 
+	Parameter C_USE_TMR_DISABLE bound to: 0 - type: integer 
+	Parameter C_VOTE_SIZE bound to: 32 - type: integer 
+	Parameter C_USE_GPO bound to: 0 - type: integer 
+	Parameter C_GPO_SIZE bound to: 32 - type: integer 
+	Parameter C_GPO_INIT bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'GPO_Module' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:3186' bound to instance 'GPO_I4' of component 'GPO_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9404]
+	Parameter C_USE_GPI bound to: 0 - type: integer 
+	Parameter C_GPI_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI_INTERRUPT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'GPI_Module' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:3015' bound to instance 'GPI_I1' of component 'GPI_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9426]
+INFO: [Synth 8-638] synthesizing module 'GPI_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:3031]
+INFO: [Synth 8-256] done synthesizing module 'GPI_Module' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:3031]
+	Parameter C_USE_GPI bound to: 0 - type: integer 
+	Parameter C_GPI_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI_INTERRUPT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'GPI_Module' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:3015' bound to instance 'GPI_I2' of component 'GPI_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9442]
+	Parameter C_USE_GPI bound to: 0 - type: integer 
+	Parameter C_GPI_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI_INTERRUPT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'GPI_Module' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:3015' bound to instance 'GPI_I3' of component 'GPI_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9458]
+	Parameter C_USE_GPI bound to: 0 - type: integer 
+	Parameter C_GPI_SIZE bound to: 32 - type: integer 
+	Parameter C_GPI_INTERRUPT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'GPI_Module' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:3015' bound to instance 'GPI_I4' of component 'GPI_Module' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9474]
+	Parameter C_TARGET bound to: 1'b0 
+	Parameter C_TMR bound to: 0 - type: integer 
+	Parameter C_USE_TMR_DISABLE bound to: 0 - type: integer 
+	Parameter C_VOTE_SIZE bound to: 170 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_INTC_ENABLED bound to: 0 - type: integer 
+	Parameter C_INTC_LEVEL_EDGE bound to: 32'b00000000000000001111111111111111 
+	Parameter C_INTC_POSITIVE bound to: 32'b11111111111111111111111111111111 
+	Parameter C_INTC_ASYNC_INTR bound to: 32'b11111111111111110000000000000000 
+	Parameter C_INTC_HAS_FAST bound to: 1 - type: integer 
+	Parameter C_INTC_ADDR_WIDTH bound to: 17 - type: integer 
+	Parameter C_INTC_NUM_SYNC_FF bound to: 2 - type: integer 
+	Parameter C_INTC_BASE_VECTORS bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_USE_LUTRAM bound to: yes - type: string 
+INFO: [Synth 8-3491] module 'intr_ctrl' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:3365' bound to instance 'intr_ctrl_I1' of component 'intr_ctrl' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:9516]
+INFO: [Synth 8-638] synthesizing module 'intr_ctrl' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:3411]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+INFO: [Synth 8-638] synthesizing module 'iomodule_v3_1_12_MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1031]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1060]
+INFO: [Synth 8-256] done synthesizing module 'iomodule_v3_1_12_MB_FDR' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1031]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+	Parameter C_TARGET bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDR' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:1015' bound to instance 'fdr_i' of component 'MB_FDR' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:4170]
+INFO: [Synth 8-256] done synthesizing module 'intr_ctrl' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:3411]
+INFO: [Synth 8-256] done synthesizing module 'Iomodule_core' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:8716]
+INFO: [Synth 8-256] done synthesizing module 'iomodule' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/hdl/iomodule_v3_1_vh_rfs.vhd:10092]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_iomodule_0_0' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/synth/bd_fc5c_0_iomodule_0_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_lmb_bram_I_0' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_6/synth/bd_fc5c_0_lmb_bram_I_0.vhd:80]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 1 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 1 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 8 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: bd_fc5c_0_lmb_bram_I_0.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 1 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 4 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 32768 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 32768 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_RSTB bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 1 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 4 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 32768 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 32768 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 32 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     20.388 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_11' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_6/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195209' bound to instance 'U0' of component 'blk_mem_gen_v8_4_11' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_6/synth/bd_fc5c_0_lmb_bram_I_0.vhd:258]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_lmb_bram_I_0' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_6/synth/bd_fc5c_0_lmb_bram_I_0.vhd:80]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'bd_fc5c_0_lmb_bram_I_0' is unconnected for instance 'lmb_bram_I' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/synth/bd_fc5c_0.v:223]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'bd_fc5c_0_lmb_bram_I_0' is unconnected for instance 'lmb_bram_I' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/synth/bd_fc5c_0.v:223]
+WARNING: [Synth 8-7023] instance 'lmb_bram_I' of module 'bd_fc5c_0_lmb_bram_I_0' has 16 connections declared, but only 14 given [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/synth/bd_fc5c_0.v:223]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_microblaze_I_0' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_0/synth/bd_fc5c_0_microblaze_I_0.vhd:88]
+	Parameter C_SCO bound to: 0 - type: integer 
+	Parameter C_FREQ bound to: 100000000 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_NUM_SYNC_FF_CLK bound to: 2 - type: integer 
+	Parameter C_NUM_SYNC_FF_CLK_IRQ bound to: 1 - type: integer 
+	Parameter C_NUM_SYNC_FF_CLK_DEBUG bound to: 2 - type: integer 
+	Parameter C_NUM_SYNC_FF_DBG_CLK bound to: 1 - type: integer 
+	Parameter C_NUM_SYNC_FF_DBG_TRACE_CLK bound to: 2 - type: integer 
+	Parameter C_FAULT_TOLERANT bound to: 0 - type: integer 
+	Parameter C_ECC_USE_CE_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_LOCKSTEP_SLAVE bound to: 0 - type: integer 
+	Parameter C_LOCKSTEP_MASTER bound to: 0 - type: integer 
+	Parameter C_TEMPORAL_DEPTH bound to: 0 - type: integer 
+	Parameter C_ENDIANNESS bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_PART bound to: xc7a50tcsg324-1 - type: string 
+	Parameter C_DATA_SIZE bound to: 32 - type: integer 
+	Parameter C_LMB_DATA_SIZE bound to: 32 - type: integer 
+	Parameter C_INSTR_SIZE bound to: 32 - type: integer 
+	Parameter C_IADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_PIADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_DADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_INSTANCE bound to: bd_fc5c_0_microblaze_I_0 - type: string 
+	Parameter C_AVOID_PRIMITIVES bound to: 0 - type: integer 
+	Parameter C_AREA_OPTIMIZED bound to: 1 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 2 - type: integer 
+	Parameter C_BASE_VECTORS bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_DP_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DP_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DP_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DP_EXCLUSIVE_ACCESS bound to: 0 - type: integer 
+	Parameter C_M_AXI_D_BUS_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_M_AXI_IP_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IP_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_IP_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_I_BUS_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_D_LMB bound to: 1 - type: integer 
+	Parameter C_D_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_D_AXI bound to: 0 - type: integer 
+	Parameter C_I_LMB bound to: 1 - type: integer 
+	Parameter C_I_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_I_AXI bound to: 0 - type: integer 
+	Parameter G_TEMPLATE_LIST bound to: 0 - type: integer 
+	Parameter C_USE_MSR_INSTR bound to: 0 - type: integer 
+	Parameter C_USE_PCMP_INSTR bound to: 0 - type: integer 
+	Parameter C_USE_BARREL bound to: 0 - type: integer 
+	Parameter C_USE_DIV bound to: 0 - type: integer 
+	Parameter C_USE_HW_MUL bound to: 0 - type: integer 
+	Parameter C_USE_FPU bound to: 0 - type: integer 
+	Parameter C_USE_REORDER_INSTR bound to: 0 - type: integer 
+	Parameter C_UNALIGNED_EXCEPTIONS bound to: 0 - type: integer 
+	Parameter C_ILL_OPCODE_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_DIV_ZERO_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_FPU_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_FSL_LINKS bound to: 0 - type: integer 
+	Parameter C_USE_EXTENDED_FSL_INSTR bound to: 0 - type: integer 
+	Parameter C_FSL_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_USE_STACK_PROTECTION bound to: 0 - type: integer 
+	Parameter C_IMPRECISE_EXCEPTIONS bound to: 0 - type: integer 
+	Parameter C_USE_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_EXT_BRK bound to: 0 - type: integer 
+	Parameter C_USE_EXT_NM_BRK bound to: 0 - type: integer 
+	Parameter C_USE_NON_SECURE bound to: 0 - type: integer 
+	Parameter C_USE_MMU bound to: 0 - type: integer 
+	Parameter C_MMU_DTLB_SIZE bound to: 4 - type: integer 
+	Parameter C_MMU_ITLB_SIZE bound to: 2 - type: integer 
+	Parameter C_MMU_TLB_ACCESS bound to: 3 - type: integer 
+	Parameter C_MMU_ZONES bound to: 16 - type: integer 
+	Parameter C_MMU_PRIVILEGED_INSTR bound to: 0 - type: integer 
+	Parameter C_USE_BRANCH_TARGET_CACHE bound to: 0 - type: integer 
+	Parameter C_BRANCH_TARGET_CACHE_SIZE bound to: 0 - type: integer 
+	Parameter C_PC_WIDTH bound to: 17 - type: integer 
+	Parameter C_PVR bound to: 0 - type: integer 
+	Parameter C_PVR_USER1 bound to: 8'b00000000 
+	Parameter C_PVR_USER2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_DYNAMIC_BUS_SIZING bound to: 0 - type: integer 
+	Parameter C_RESET_MSR bound to: 32'b00000000000000000000000000000000 
+	Parameter C_OPCODE_0x0_ILLEGAL bound to: 0 - type: integer 
+	Parameter C_DEBUG_ENABLED bound to: 0 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_NUMBER_OF_PC_BRK bound to: 1 - type: integer 
+	Parameter C_NUMBER_OF_RD_ADDR_BRK bound to: 0 - type: integer 
+	Parameter C_NUMBER_OF_WR_ADDR_BRK bound to: 0 - type: integer 
+	Parameter C_DEBUG_EVENT_COUNTERS bound to: 5 - type: integer 
+	Parameter C_DEBUG_LATENCY_COUNTERS bound to: 1 - type: integer 
+	Parameter C_DEBUG_COUNTER_WIDTH bound to: 32 - type: integer 
+	Parameter C_DEBUG_TRACE_SIZE bound to: 8192 - type: integer 
+	Parameter C_DEBUG_EXTERNAL_TRACE bound to: 0 - type: integer 
+	Parameter C_DEBUG_TRACE_ASYNC_RESET bound to: 0 - type: integer 
+	Parameter C_DEBUG_PROFILE_SIZE bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_IS_EDGE bound to: 0 - type: integer 
+	Parameter C_EDGE_IS_POSITIVE bound to: 1 - type: integer 
+	Parameter C_ASYNC_INTERRUPT bound to: 1 - type: integer 
+	Parameter C_ASYNC_WAKEUP bound to: 3 - type: integer 
+	Parameter C_M0_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S0_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M1_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S1_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M2_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S2_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M3_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S3_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M4_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S4_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M5_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S5_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M6_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S6_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M7_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S7_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M8_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S8_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M9_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S9_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M10_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S10_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M11_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S11_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M12_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S12_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M13_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S13_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M14_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S14_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M15_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S15_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ICACHE_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_ICACHE_HIGHADDR bound to: 64'b0000000000000000000000000000000000111111111111111111111111111111 
+	Parameter C_USE_ICACHE bound to: 0 - type: integer 
+	Parameter C_ALLOW_ICACHE_WR bound to: 1 - type: integer 
+	Parameter C_ADDR_TAG_BITS bound to: 0 - type: integer 
+	Parameter C_CACHE_BYTE_SIZE bound to: 8192 - type: integer 
+	Parameter C_ICACHE_LINE_LEN bound to: 4 - type: integer 
+	Parameter C_ICACHE_ALWAYS_USED bound to: 1 - type: integer 
+	Parameter C_ICACHE_STREAMS bound to: 0 - type: integer 
+	Parameter C_ICACHE_VICTIMS bound to: 0 - type: integer 
+	Parameter C_ICACHE_FORCE_TAG_LUTRAM bound to: 0 - type: integer 
+	Parameter C_ICACHE_DATA_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_IC_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IC_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_IC_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_IC_USER_VALUE bound to: 31 - type: integer 
+	Parameter C_M_AXI_IC_AWUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_IC_ARUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_IC_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IC_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IC_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_DCACHE_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_DCACHE_HIGHADDR bound to: 64'b0000000000000000000000000000000000111111111111111111111111111111 
+	Parameter C_USE_DCACHE bound to: 0 - type: integer 
+	Parameter C_ALLOW_DCACHE_WR bound to: 1 - type: integer 
+	Parameter C_DCACHE_ADDR_TAG bound to: 0 - type: integer 
+	Parameter C_DCACHE_BYTE_SIZE bound to: 8192 - type: integer 
+	Parameter C_DCACHE_LINE_LEN bound to: 4 - type: integer 
+	Parameter C_DCACHE_ALWAYS_USED bound to: 1 - type: integer 
+	Parameter C_DCACHE_USE_WRITEBACK bound to: 0 - type: integer 
+	Parameter C_DCACHE_VICTIMS bound to: 0 - type: integer 
+	Parameter C_DCACHE_FORCE_TAG_LUTRAM bound to: 0 - type: integer 
+	Parameter C_DCACHE_DATA_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_DC_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DC_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DC_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DC_EXCLUSIVE_ACCESS bound to: 0 - type: integer 
+	Parameter C_M_AXI_DC_USER_VALUE bound to: 31 - type: integer 
+	Parameter C_M_AXI_DC_AWUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_DC_ARUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_DC_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DC_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DC_BUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'MicroBlaze' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_0/hdl/microblaze_v11_0_vh_rfs.vhd:165076' bound to instance 'U0' of component 'MicroBlaze' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_0/synth/bd_fc5c_0_microblaze_I_0.vhd:768]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_microblaze_I_0' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_0/synth/bd_fc5c_0_microblaze_I_0.vhd:88]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'bd_fc5c_0_microblaze_I_0' is unconnected for instance 'microblaze_I' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/synth/bd_fc5c_0.v:240]
+WARNING: [Synth 8-7023] instance 'microblaze_I' of module 'bd_fc5c_0_microblaze_I_0' has 24 connections declared, but only 23 given [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/synth/bd_fc5c_0.v:240]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_rst_0_0' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/synth/bd_fc5c_0_rst_0_0.vhd:74]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1243' bound to instance 'U0' of component 'proc_sys_reset' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/synth/bd_fc5c_0_rst_0_0.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1371]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1387]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1413]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1436]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1460]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'D:/2025.1/Vivado/scripts/rt/data/unisim_comp.v:158596' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:873]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [D:/2025.1/Vivado/scripts/rt/data/unisim_comp.v:158596]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [D:/2025.1/Vivado/scripts/rt/data/unisim_comp.v:158596]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_HI_EXT' of component 'xpm_cdc_single' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:944]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [D:/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [D:/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_AUX' of component 'xpm_cdc_single' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1015]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_rst_0_0' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/synth/bd_fc5c_0_rst_0_0.vhd:74]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'bd_fc5c_0_rst_0_0' is unconnected for instance 'rst_0' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/synth/bd_fc5c_0.v:264]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_fc5c_0_rst_0_0' is unconnected for instance 'rst_0' [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/synth/bd_fc5c_0.v:264]
+WARNING: [Synth 8-7023] instance 'rst_0' of module 'bd_fc5c_0_rst_0_0' has 10 connections declared, but only 8 given [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/synth/bd_fc5c_0.v:264]
+INFO: [Synth 8-6155] done synthesizing module 'bd_fc5c_0' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/synth/bd_fc5c_0.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_mcs_0' (0#1) [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/synth/microblaze_mcs_0.v:53]
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ILMB_data_strobe in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ILMB_data_sel in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[0] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[1] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[2] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[3] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[4] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[5] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[6] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[7] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[8] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[9] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[10] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[11] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[12] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[13] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[14] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[15] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[16] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[17] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[18] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[19] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[20] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[21] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[22] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[23] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[24] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[25] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[26] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[27] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[28] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[29] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[30] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data[31] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IEXT_data_strobe in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[0] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[1] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[2] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[3] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[4] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[5] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[6] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[7] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[8] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[9] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[10] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[11] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[12] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[13] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[14] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[15] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[16] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[17] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[18] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[19] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[20] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[21] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[22] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[23] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[24] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[25] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[26] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[27] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[28] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[29] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[30] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ICache_data[31] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[0] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[1] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[2] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[3] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[4] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[5] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[6] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[7] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[8] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[9] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[10] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[11] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[12] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[13] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[14] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[15] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[16] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[17] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[18] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[19] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[20] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[21] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[22] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[23] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[24] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[25] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[26] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[27] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[28] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[29] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[30] in module instr_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IDebug_data[31] in module instr_mux is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 1805.594 ; gain = 1099.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 1805.594 ; gain = 1099.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 1805.594 ; gain = 1099.578
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.463 . Memory (MB): peak = 1805.594 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 441 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/microblaze_mcs_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/microblaze_mcs_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_0/bd_fc5c_0_microblaze_I_0.xdc] for cell 'inst/microblaze_I/U0'
+Finished Parsing XDC File [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_0/bd_fc5c_0_microblaze_I_0.xdc] for cell 'inst/microblaze_I/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_0/bd_fc5c_0_microblaze_I_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/microblaze_mcs_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/microblaze_mcs_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/bd_fc5c_0_rst_0_0_board.xdc] for cell 'inst/rst_0/U0'
+Finished Parsing XDC File [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_1/bd_fc5c_0_rst_0_0_board.xdc] for cell 'inst/rst_0/U0'
+Parsing XDC File [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_3/bd_fc5c_0_dlmb_0.xdc] for cell 'inst/dlmb/U0'
+Finished Parsing XDC File [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_3/bd_fc5c_0_dlmb_0.xdc] for cell 'inst/dlmb/U0'
+Parsing XDC File [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/bd_fc5c_0_iomodule_0_0_board.xdc] for cell 'inst/iomodule_0/U0'
+Finished Parsing XDC File [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_7/bd_fc5c_0_iomodule_0_0_board.xdc] for cell 'inst/iomodule_0/U0'
+Parsing XDC File [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/microblaze_mcs_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/microblaze_mcs_0_board.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.runs/microblaze_mcs_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.runs/microblaze_mcs_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.runs/microblaze_mcs_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/microblaze_mcs_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/microblaze_mcs_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/2025.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/microblaze_mcs_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/microblaze_mcs_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 2 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1805.594 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 327 instances were transformed.
+  FD => FDRE: 32 instances
+  FDE => FDRE: 32 instances
+  FDR => FDRE: 33 instances
+  FDRSE => FDRSE (FDRE, LUT4, VCC): 5 instances
+  FDS => FDSE: 5 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 81 instances
+  MULT_AND => LUT2: 3 instances
+  MUXCY_L => MUXCY: 71 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 64 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.187 . Memory (MB): peak = 1805.594 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:14 ; elapsed = 00:01:21 . Memory (MB): peak = 1805.594 ; gain = 1099.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:14 ; elapsed = 00:01:21 . Memory (MB): peak = 1805.594 ; gain = 1099.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:01:21 . Memory (MB): peak = 1805.594 ; gain = 1099.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 1805.594 ; gain = 1099.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/iomodule_0/U0/IOModule_Core_I1/FIT_I1' (FIT_Module) to 'inst/iomodule_0/U0/IOModule_Core_I1/FIT_I2'
+INFO: [Synth 8-223] decloning instance 'inst/iomodule_0/U0/IOModule_Core_I1/FIT_I1' (FIT_Module) to 'inst/iomodule_0/U0/IOModule_Core_I1/FIT_I3'
+INFO: [Synth 8-223] decloning instance 'inst/iomodule_0/U0/IOModule_Core_I1/FIT_I1' (FIT_Module) to 'inst/iomodule_0/U0/IOModule_Core_I1/FIT_I4'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (POR_FF_I) is unused and will be removed from module lmb_v10.
+INFO: [Synth 8-3332] Sequential element (U0/POR_FF_I) is unused and will be removed from module bd_fc5c_0_ilmb_0.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[0].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[1].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[2].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[3].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[4].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[5].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[6].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[7].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[8].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[9].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[10].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[11].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[12].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[13].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[14].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[15].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[16].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[17].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[18].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[19].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[20].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[21].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[22].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[23].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[24].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[25].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[26].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[27].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[28].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[29].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[30].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+WARNING: [Synth 8-3332] Sequential element (IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[31].fdr_i/Using_FPGA.Native) is unused and will be removed from module iomodule.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.ALU_unmask_EA_FDRE/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.ALU_long_Op_FDRE/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.ALU_long_ALU_Op_FDRE/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.Reg_Test_Long_FDRE/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[31].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[30].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[29].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[28].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[27].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[26].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[25].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[24].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[23].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[22].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[21].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[20].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[19].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[18].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[17].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[16].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[15].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[14].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[13].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[12].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[11].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[10].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[9].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[8].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[7].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[6].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[5].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[4].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[3].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[2].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[1].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/Result_Mux_I/Result_Mux_Bits[0].Result_Mux_Bit_I/EX_Result_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/PC_Module_I/Not_All_Bits.Using_FPGA.PC_GEN[29].PC_Bit_I/EX_Reset_DFF.PC_EX_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/PC_Module_I/Not_All_Bits.Using_FPGA.PC_GEN[28].PC_Bit_I/EX_Reset_DFF.PC_EX_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/PC_Module_I/Not_All_Bits.Using_FPGA.PC_GEN[27].PC_Bit_I/EX_Reset_DFF.PC_EX_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/PC_Module_I/Not_All_Bits.Using_FPGA.PC_GEN[26].PC_Bit_I/EX_Reset_DFF.PC_EX_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/PC_Module_I/Not_All_Bits.Using_FPGA.PC_GEN[25].PC_Bit_I/EX_Reset_DFF.PC_EX_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/PC_Module_I/Not_All_Bits.Using_FPGA.PC_GEN[24].PC_Bit_I/EX_Reset_DFF.PC_EX_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/PC_Module_I/Not_All_Bits.Using_FPGA.PC_GEN[23].PC_Bit_I/EX_Reset_DFF.PC_EX_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/PC_Module_I/Not_All_Bits.Using_FPGA.PC_GEN[22].PC_Bit_I/EX_Reset_DFF.PC_EX_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/PC_Module_I/Not_All_Bits.Using_FPGA.PC_GEN[21].PC_Bit_I/EX_Reset_DFF.PC_EX_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/PC_Module_I/Not_All_Bits.Using_FPGA.PC_GEN[20].PC_Bit_I/EX_Reset_DFF.PC_EX_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/PC_Module_I/Not_All_Bits.Using_FPGA.PC_GEN[19].PC_Bit_I/EX_Reset_DFF.PC_EX_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/PC_Module_I/Not_All_Bits.Using_FPGA.PC_GEN[18].PC_Bit_I/EX_Reset_DFF.PC_EX_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/PC_Module_I/Not_All_Bits.Using_FPGA.PC_GEN[17].PC_Bit_I/EX_Reset_DFF.PC_EX_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/PC_Module_I/Not_All_Bits.Using_FPGA.PC_GEN[16].PC_Bit_I/EX_Reset_DFF.PC_EX_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Data_Flow_I/PC_Module_I/Not_All_Bits.Using_FPGA.PC_GEN[15].PC_Bit_I/EX_Reset_DFF.PC_EX_DFF/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N) is unused and will be removed from module proc_sys_reset.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:34 . Memory (MB): peak = 1805.594 ; gain = 1099.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/microblaze_I/U0/Reset' to pin 'inst/rst_0/U0/FDRE_inst/Q'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:37 ; elapsed = 00:01:46 . Memory (MB): peak = 1805.594 ; gain = 1099.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:39 ; elapsed = 00:01:48 . Memory (MB): peak = 1805.594 ; gain = 1099.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:40 ; elapsed = 00:01:48 . Memory (MB): peak = 1805.594 ; gain = 1099.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:48 ; elapsed = 00:01:57 . Memory (MB): peak = 1852.875 ; gain = 1146.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:48 ; elapsed = 00:01:57 . Memory (MB): peak = 1852.875 ; gain = 1146.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:48 ; elapsed = 00:01:57 . Memory (MB): peak = 1852.875 ; gain = 1146.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:48 ; elapsed = 00:01:57 . Memory (MB): peak = 1852.875 ; gain = 1146.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:48 ; elapsed = 00:01:57 . Memory (MB): peak = 1852.875 ; gain = 1146.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:48 ; elapsed = 00:01:57 . Memory (MB): peak = 1852.875 ; gain = 1146.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |     6|
+|2     |LUT2     |    44|
+|3     |LUT3     |    52|
+|4     |LUT4     |   198|
+|5     |LUT5     |    64|
+|6     |LUT6     |   169|
+|8     |MULT_AND |     2|
+|9     |MUXCY_L  |    68|
+|10    |MUXF7    |    32|
+|11    |RAM32X1D |    64|
+|12    |RAMB36E1 |    32|
+|13    |SRL16    |     1|
+|14    |SRL16E   |    49|
+|15    |XORCY    |    50|
+|16    |FDE      |    32|
+|17    |FDR      |     1|
+|18    |FDRE     |   347|
+|19    |FDS      |     3|
+|20    |FDSE     |    22|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:48 ; elapsed = 00:01:57 . Memory (MB): peak = 1852.875 ; gain = 1146.859
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12809 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:01:48 . Memory (MB): peak = 1852.875 ; gain = 1146.859
+Synthesis Optimization Complete : Time (s): cpu = 00:01:49 ; elapsed = 00:01:58 . Memory (MB): peak = 1852.875 ; gain = 1146.859
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.177 . Memory (MB): peak = 1852.875 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 366 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'microblaze_mcs_0'...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1870.711 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 203 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 19 instances
+  FDE => FDRE: 32 instances
+  FDR => FDRE: 1 instance 
+  FDS => FDSE: 3 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 81 instances
+  MULT_AND => LUT2: 2 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 64 instances
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete | Checksum: 7599d6
+INFO: [Common 17-83] Releasing license: Synthesis
+230 Infos, 148 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:57 ; elapsed = 00:02:08 . Memory (MB): peak = 1870.711 ; gain = 1357.031
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1870.711 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.runs/microblaze_mcs_0_synth_1/microblaze_mcs_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP microblaze_mcs_0, cache-ID = 96bb1417d86da4ec
+INFO: [Coretcl 2-1174] Renamed 892 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1870.711 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.runs/microblaze_mcs_0_synth_1/microblaze_mcs_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file microblaze_mcs_0_utilization_synth.rpt -pb microblaze_mcs_0_utilization_synth.pb
+write_vhdl: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1870.711 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 23 21:03:02 2026...

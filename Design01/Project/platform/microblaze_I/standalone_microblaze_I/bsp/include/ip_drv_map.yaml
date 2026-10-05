@@ -1,0 +1,6 @@
+dlmb_cntlr:
+- lmb_bram_if_cntlr
+- bram
+iomodule_0:
+- iomodule
+- iomodule

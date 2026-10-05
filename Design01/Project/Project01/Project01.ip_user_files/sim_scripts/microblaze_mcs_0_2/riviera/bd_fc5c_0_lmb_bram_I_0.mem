@@ -1,0 +1,16 @@
+// Mem file initialization records.
+//
+// SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+// Vivado v2025.1 (64-bit)
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+// Created on Friday January 23, 2026 - 09:00:19 pm, from:
+//
+//     Map file     - c:\Users\Lenovo\Desktop\Letnik3\DN\Project\Project01\Project01.gen\sources_1\ip\microblaze_mcs_0_2\bd_0\bd_fc5c_0.bmm
+//     Data file(s) - c:/Users/Lenovo/Desktop/Letnik3/DN/Project/Project01/Project01.gen/sources_1/ip/microblaze_mcs_0_2/bd_0/ip/ip_0/data/mb_bootloop_le.elf
+//
+// Address space 'your_instance_name_inst_microblaze_I.your_instance_name_inst_lmb_bram_I_128K_1_ADDR_SPACE', bit lane [31:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    B8000000
